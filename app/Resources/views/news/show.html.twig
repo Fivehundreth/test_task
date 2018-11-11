@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.header }} | test_task{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>{{ article.header }}</h2>
+                <p>Created at: {{ article.createdAt | date('m/d/Y') }}</p>
+                <p>{{ article.text }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
